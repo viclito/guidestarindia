@@ -1,5 +1,8 @@
 import './homepage.scss'
 
+import search from '../../src/assets/search.png'
+import mainimg from '../../src/assets/homepage/Frame_2-removebg-preview.png'
+
 const Landingpage = () => {
   return (
     <div className='landing'>
@@ -15,7 +18,7 @@ const Landingpage = () => {
                     <div className="input">
                         <input type="text" placeholder='Enter organisation name or keyword'/>
                         <button>
-                            <img src="../../public/assets/search.png" alt="" />
+                            <img src={search} alt="" />
                         </button>
                     </div>
                     <button className='search'>SEARCH</button>
@@ -26,7 +29,7 @@ const Landingpage = () => {
                 </div>
             </div>
             <div className="right">
-                <img src="../../src/assets/homepage/Frame_2-removebg-preview.png" alt="" />
+                <img src={mainimg} alt="" />
             </div>
         </div>
     </div>
