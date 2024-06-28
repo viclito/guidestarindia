@@ -15,7 +15,7 @@ const Landingpage = () => {
                     <div className="input">
                         <input type="text" placeholder='Enter organisation name or keyword'/>
                         <button>
-                            <img src="../../src/assets/search.png" alt="" />
+                            <img src="../../public/assets/search.png" alt="" />
                         </button>
                     </div>
                     <button className='search'>SEARCH</button>
