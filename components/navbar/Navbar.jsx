@@ -2,6 +2,12 @@ import React, { useState } from 'react'
 import './navbar.scss'
 import HoverImage from '../HoverImage'
 
+import search from "../../src/assets/search.png"
+import downarrow from '../../src/assets/homepage/down-arrow.png'
+import crossicon from '../../src/assets/homepage/cross-icon.png'
+import logo from "../../src/assets/logo.png"
+import logo2 from "../../src/assets/logo2.png"
+
 import facebook from '../../src/assets/facebook.png';
 import facebookBlue from '../../src/assets/facebookblue.png';
 import instagram from '../../src/assets/instagram.png';
@@ -26,19 +32,19 @@ const Navbar = () => {
 
           <div className="firstsec">
             <div className="left">
-              <img src="../../src/assets/logo.png" alt="" />
+              <img src={logo} alt="" />
               <p>.</p>
             </div>
             <div className="right">
               <div className="glance" onClick={()=>setNavOpen(!navOpen)}>
                 <p>GuideStar India at a glance</p>
-                <img src={!navOpen ? '../../src/assets/homepage/down-arrow.png':'../../src/assets/homepage/cross-icon.png'} alt="" />
+                <img src={!navOpen ? downarrow:crossicon} alt="" />
               </div>
               <div className="inputlayout">
                 <div className="input">
                   <input type="text" placeholder='Enter GSN / IT PAN/ Darpan ID/ FCRA No.'/>
                   <button>
-                    <img src="../../src/assets/search.png" alt="" />
+                    <img src={search} alt="" />
                   </button>
                 </div>
                 <h5>NPO/NGO/ Charity Check</h5>
@@ -60,7 +66,7 @@ const Navbar = () => {
               >
                 <div className="innersec">
                   <div className="one">
-                    <img src="../../src/assets/logo2.png" alt="" />
+                    <img src={logo2} alt="" />
                   </div>
                   <div className="two">
                     <ul>
