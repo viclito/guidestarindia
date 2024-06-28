@@ -1,0 +1,213 @@
+.navbar{
+    width: 100vw;
+    border-bottom: 1px solid #ccc;
+    .inner{
+        
+        .firstsec{
+            max-width: 1250px;
+            padding:0 20px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left{
+                display: flex;
+                img{
+                    height: 50px;
+                    width: auto;
+                }
+                p{
+                    color: white;
+                }
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                gap: 3px;
+                padding-top: 5px;
+                .glance{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    p{
+                        color: #C00000;
+                        font-weight: 700;
+                        font-size: 14px;
+                    }
+                    img{
+                        position: absolute;
+                        right: -20px;
+                        height: 16px;
+                    }
+                }
+                .inputlayout{
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    padding-bottom: 10px;
+                    flex-wrap: wrap;
+                    .input{
+                        border: 2px solid #4472C4;
+                        border-radius: 5px;
+                        display: flex;
+                        width: 310px;
+                        padding: 6px 10px;
+                        input{
+                            flex-grow: 1;
+                            outline: none;
+                            border: none;
+                            font-size: 13px;
+                            font-weight: 600;
+                            padding-right: 10px;
+                        }
+                        button{
+                            cursor: pointer;
+                            border: none;
+                            outline: none;
+                            background-color: white;
+                            img{
+                                height: 16px;
+                                width: auto;
+                            }
+                        }
+
+                    }
+                    h5{
+                        font-size: 14px;
+                        color: #4472C4;
+                    }
+                }
+            }
+        }
+
+        .secondsec.active{
+            max-height: fit-content;
+        }
+
+        .secondsec{
+            border-top: 1px solid #ccc;
+            overflow: hidden;
+            
+            .innersec{
+                padding:10px 20px;
+                display: grid;
+                place-items: center;
+                grid-template-columns: 1fr 3fr 3fr 3fr 1.5fr;
+                max-width: 1250px;
+                margin: auto;
+                .one{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 70px;
+                    }
+                }
+                .two{
+                    ul{
+                        li{
+                            padding-bottom: 5px;
+                            a{
+                                font-size: 14px;
+                                font-weight: 500;
+                                transition: all .4s;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+                .three{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    p{
+                        text-align: end;
+                        font-size: 14px;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                    }
+                    .icon{
+                        display: flex;
+                        justify-content: end;
+                        gap: 15px;
+                        margin-bottom: 8px;
+                        img{
+                            height: 16px;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .thirdsec{
+            
+            width: 100%;
+            background-color: #004878;
+            
+            .innersec{
+                padding:0 20px;
+                position: relative;
+                max-width: 1250px;
+                margin: auto;
+            }
+
+            .nposcount{
+                position: absolute;
+                display: flex;
+                gap: 3px;
+                align-items: center;
+                h4{
+                    color: #fec74e;
+                    font-size: 21px;
+                }
+                h5{
+                    color: #fec74e;
+                }
+            }
+            h5{
+                text-align: center;
+                padding: 12px 0;
+                color: white;
+                font-weight: 500;
+                font-size: 15px;
+            }
+        }
+
+        .fourthsec{
+            padding:25px 20px;
+            max-width: 1250px;
+            margin: auto;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    a{
+                        letter-spacing: .5px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        transition: all .4s;
+                    }
+                }
+                button{
+                    padding: 8px 14px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    background-color: #C00000; 
+                    border-radius: 4px;
+                    color: white; 
+                    border: none;                 
+                }
+            }
+        }
+    }
+}
+.navbar ul li a:hover{
+    color: #4472C4 !important;
+    text-decoration: underline;
+}
