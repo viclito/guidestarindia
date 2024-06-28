@@ -2,6 +2,8 @@ import React from 'react'
 import './footer.scss'
 import HoverImage from '../HoverImage'
 
+import logo from "../../src/assets/logo.png"
+
 
 import facebook from '../../src/assets/facebook.png';
 import facebookBlue from '../../src/assets/facebookblue.png';
@@ -24,7 +26,7 @@ const Footer = () => {
           <div className="segmants">
             <div className="box">
                 <div className="img">
-                  <img src="../../src/assets/logo.png" alt="" />
+                  <img src={logo} alt="" />
                 </div>
                 <div className="logos">
                   <HoverImage 

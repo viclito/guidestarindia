@@ -1,6 +1,14 @@
 import React from 'react'
 import './homepage.scss'
 
+import stories1 from "../../src/assets/homepage/stories1.jpg"
+import stories2 from "../../src/assets/homepage/stories2.jpg"
+import stories3 from "../../src/assets/homepage/stories3.jpg"
+
+import ngoperson1 from "../../src/assets/homepage/ngoperson1.jpg"
+
+import philanthropy1 from "../../src/assets/homepage/philanthropy1.png"
+import philanthropy2 from "../../src/assets/homepage/philanthropy2.png"
 const HomepageEighttoElevenSec = () => {
   return (
     <>
@@ -10,7 +18,7 @@ const HomepageEighttoElevenSec = () => {
                 <div className="boxes">
                     <div className="box">
                         <div className="img">
-                            <img src="../../src/assets/homepage/stories1.jpg" alt="" />
+                            <img src={stories1} alt="" />
                         </div>
                         <div className="textbox">
                             <div className="firsttext">
@@ -26,7 +34,7 @@ const HomepageEighttoElevenSec = () => {
                     </div>
                     <div className="box">
                         <div className="img">
-                            <img src="../../src/assets/homepage/stories2.jpg" alt="" />
+                            <img src={stories2} alt="" />
                         </div>
                         <div className="textbox">
                             <div className="firsttext">
@@ -42,7 +50,7 @@ const HomepageEighttoElevenSec = () => {
                     </div>
                     <div className="box">
                         <div className="img">
-                            <img src="../../src/assets/homepage/stories3.jpg" alt="" />
+                            <img src={stories3} alt="" />
                         </div>
                         <div className="textbox">
                             <div className="firsttext">
@@ -71,7 +79,7 @@ const HomepageEighttoElevenSec = () => {
                 <div className="boxes">
                     <div className="box">
                         <div className="img">
-                            <img src="../../src/assets/homepage/stories1.jpg" alt="" />
+                            <img src={stories1} alt="" />
                         </div>
                         <div className="textbox">
                             <div className="firsttext">
@@ -87,7 +95,7 @@ const HomepageEighttoElevenSec = () => {
                     </div>
                     <div className="box">
                         <div className="img">
-                            <img src="../../src/assets/homepage/stories2.jpg" alt="" />
+                            <img src={stories2} alt="" />
                         </div>
                         <div className="textbox">
                             <div className="firsttext">
@@ -103,7 +111,7 @@ const HomepageEighttoElevenSec = () => {
                     </div>
                     <div className="box">
                         <div className="img">
-                            <img src="../../src/assets/homepage/stories3.jpg" alt="" />
+                            <img src={stories3} alt="" />
                         </div>
                         <div className="textbox">
                             <div className="firsttext">
@@ -134,7 +142,7 @@ const HomepageEighttoElevenSec = () => {
                         </div>
                         <div className="downbox">
                             <div className="img">
-                                <img src="../../src/assets/homepage/ngoperson1.jpg" alt="" />
+                                <img src={ngoperson1} alt="" />
                             </div>
                             <div className="innertext">
                                 <h3>Victoria Vrana</h3>
@@ -148,7 +156,7 @@ const HomepageEighttoElevenSec = () => {
                         </div>
                         <div className="downbox">
                             <div className="img">
-                                <img src="../../src/assets/homepage/ngoperson1.jpg" alt="" />
+                                <img src={ngoperson1} alt="" />
                             </div>
                             <div className="innertext">
                                 <h3>Victoria Vrana</h3>
@@ -162,7 +170,7 @@ const HomepageEighttoElevenSec = () => {
                         </div>
                         <div className="downbox">
                             <div className="img">
-                                <img src="../../src/assets/homepage/ngoperson1.jpg" alt="" />
+                                <img src={ngoperson1} alt="" />
                             </div>
                             <div className="innertext">
                                 <h3>Victoria Vrana</h3>
@@ -183,13 +191,13 @@ const HomepageEighttoElevenSec = () => {
                 <div className="boxes">
                     <a href='' className="box">
                         <div className="img">
-                            <img src="../../src/assets/homepage/philanthropy1.png" alt="" />
+                            <img src={philanthropy1} alt="" />
                         </div>
                         
                     </a>
                     <a href='' className="box">
                         <div className="img">
-                            <img src="../../src/assets/homepage/philanthropy2.png" alt="" />
+                            <img src={philanthropy2} alt="" />
                         </div>
                         
                     </a>
