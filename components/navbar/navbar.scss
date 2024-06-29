@@ -182,7 +182,55 @@
             padding:25px 20px;
             max-width: 1250px;
             margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .mobilelogo{
+                display: none;
+                img{
+                    height: 40px;
+                    width: auto;
+                }
+            }
+            .hamburger{
+                display: none;
+                img{
+                    height: 20px;
+                    width: auto;
+                }
+            }
+            .mobilemenu{
+                display: none;
+                ul{
+                    
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+
+                    li{
+                        a{
+                            letter-spacing: .5px;
+                            font-size: 14px;
+                            font-weight: 600;
+                            transition: all .4s;
+                        }
+                    }
+                    button{
+                        padding: 8px 14px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        background-color: #C00000; 
+                        border-radius: 4px;
+                        color: white; 
+                        border: none;                 
+                    }
+                }
+            }
+
             ul{
+                width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -201,7 +249,10 @@
                     background-color: #C00000; 
                     border-radius: 4px;
                     color: white; 
-                    border: none;                 
+                    border: none;     
+                    a{
+                        color: white;
+                    }            
                 }
             }
         }
@@ -210,4 +261,31 @@
 .navbar ul li a:hover{
     color: #4472C4 !important;
     text-decoration: underline;
+}
+
+@media (max-width:990px) {
+    .navbar{
+        .firstsec{
+            .left{
+                img{
+                    display: none;
+                }
+            }
+        }
+        .fourthsec{
+            .mobilelogo{
+                display: block !important;
+            }
+            ul{
+                display: none !important;
+            }
+            .mobile{
+                display: flex !important;
+            }
+            .hamburger{
+                display: block !important;
+            }
+            
+        }
+    }
 }

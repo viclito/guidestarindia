@@ -20,7 +20,10 @@ import youtube from '../../src/assets/youtube.png';
 import youtubeblue from '../../src/assets/youtubeblue.png';
 import chat from '../../src/assets/chat.png';
 import chatblue from '../../src/assets/chatblue.png';
+
+import hamburger from '../../src/assets/hamburger.png'
 import {motion , AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [navOpen , setNavOpen] = useState(false)
@@ -150,6 +153,15 @@ const Navbar = () => {
           {/* fouth section  */}
 
           <div className="fourthsec">
+            <div className="mobile">
+              <div className="mobilelogo">
+                <img src={logo} alt="" />
+              </div>
+              <div className="hamburger">
+                <img src={hamburger} alt="" />
+              </div>
+            </div>
+            
             <ul>
               <li><a href="">Home</a></li>
               <li><a href="">Discover/ Support NPOs</a></li>
@@ -158,9 +170,25 @@ const Navbar = () => {
               <li><a href="">help</a></li>
               <li><a href="">Media</a></li>
               <button>
-                Sign In / Create Account
+                <Link to="/login">
+                  Sign In / Create Account
+                </Link>
               </button>
             </ul>
+            <div className='mobilemenu'>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Discover/ Support NPOs</a></li>
+                <li><a href="">CERTIFIED NPOs LIST</a></li>
+                <li><a href="">Update your Npo Profile</a></li>
+                <li><a href="">help</a></li>
+                <li><a href="">Media</a></li>
+                <button>
+                  Sign In / Create Account
+                </button>
+              </ul>
+            </div>
+            
           </div>
         </div>
     </div>
