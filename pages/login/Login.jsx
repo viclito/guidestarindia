@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useMutation } from "react-query";
 import Layout from "../../components/Layout";
 
@@ -72,11 +72,15 @@ const Login = () => {
                     />
                 </div>
               </div>
-              {error && <p style={{ color: "red" }}>{error}</p>}
+              {error && <p style={{ color: "red" , fontSize: "12px"}}>{error}</p>}
               <button type="submit" disabled={mutation.isLoading}>
                 {mutation.isLoading ? "Logging in..." : "Login"}
               </button>
+              <Link to='/register'>
+                <h5>Don&apos;t have an account! <span color="#4472C4">Register Now</span></h5>
+              </Link>
             </form>
+
           </div>
         </div>
       </div>

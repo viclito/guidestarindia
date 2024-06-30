@@ -5,6 +5,7 @@ import Login from "../pages/login/Login";
 import PrivateRoute from "../components/PrivateRoute";
 import StatesList from "../pages/StatesList";
 import { QueryClient, QueryClientProvider } from "react-query";
+import Register from "../pages/register/Register";
 
 function App() {
   const queryClient = new QueryClient();
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Hompage />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route
             path="/states"
             element={
