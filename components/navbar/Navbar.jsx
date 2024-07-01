@@ -163,7 +163,7 @@ const Navbar = () => {
             </div>
             
             <ul>
-              <li><a href="">Home</a></li>
+              <li><Link to='/'>Home</Link></li>
               <li><a href="">Discover/ Support NPOs</a></li>
               <li><a href="">CERTIFIED NPOs LIST</a></li>
               <li><a href="">Update your Npo Profile</a></li>
