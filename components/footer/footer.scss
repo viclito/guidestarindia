@@ -1,5 +1,6 @@
 .footer{
-    background-color: #ede7e7;
+    // background-color: #ede7e7;
+    background-color: #f7f7f7;
     .inner{
         
         .firstsec{
@@ -35,7 +36,7 @@
                                 font-size: 14px;
                                 line-height: 1.6;
                                 &:hover{
-                                    color: #4472C4;
+                                    color: #004878;
                                 }
                             }
                         }
@@ -82,6 +83,36 @@
             h6{
                 text-align: center;
                 font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width:750px) {
+    .footer{
+        .inner{
+            .firstsec{
+                .segmants{
+                    grid-template-columns: 2fr 2fr ;
+                    
+                }
+            }
+            .secondsec{
+                ul{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+@media (max-width:480px) {
+    .footer{
+        .inner{
+            .firstsec{
+                .segmants{
+                    grid-template-columns: 1fr;
+                    
+                }
             }
         }
     }

@@ -121,6 +121,7 @@ const Footer = () => {
             <li><a href=''>TERMS OF USE</a></li>
             <li><a href=''>DISCLAIMER</a></li>
             <li><a href=''>COPYRIGHT CSIS INDIA</a></li>
+            <li><a href=''>SUPPORT GUIDESTAR INDIA</a></li>
             <li><a href=''>WORK WITH US</a></li>
             <li><a href=''>CONTACT US</a></li>
             <li><a href=''>SEND FEEDBACK</a></li>
@@ -130,7 +131,7 @@ const Footer = () => {
 
 
         <div className="thirdsec">
-          <h6>GuideStar India is a programme of Civil Society Information Services India (CSISI), a public charitable trust registered in India with 80G and FCRA registration. ©2024 CSISI.Support GuideStar India</h6>
+          <h6>GuideStar India is a programme of Civil Society Information Services India (CSISI), a public charitable trust registered in India with 80G and FCRA registration. ©2024 CSISI.</h6>
         </div>
       </div>
     </div>

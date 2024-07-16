@@ -49,7 +49,7 @@
                     padding-bottom: 10px;
                     flex-wrap: wrap;
                     .input{
-                        border: 2px solid #4472C4;
+                        border: 2px solid #004878;
                         border-radius: 5px;
                         display: flex;
                         width: 310px;
@@ -76,7 +76,8 @@
                     }
                     h5{
                         font-size: 14px;
-                        color: #4472C4;
+                        color: #004878;
+                        letter-spacing: .18px;
                     }
                 }
             }
@@ -185,6 +186,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
+            z-index: 40;
 
             .mobilelogo{
                 display: none;
@@ -202,11 +205,22 @@
             }
             .mobilemenu{
                 display: none;
+                height: 300px;
+                position: absolute;
+                width: 250px;
+                background-color: white;
+                border-radius: 5px;
+                padding: 20px;
+                box-shadow: 1px 1px 2px #ccc , -1px -1px 2px #ccc ;
+                top: 95px;
+                right: 30px;
+                z-index: 100;
                 ul{
                     
                     display: flex;
+                    gap: 20px;
                     justify-content: space-between;
-                    align-items: center;
+                    align-items: start;
                     flex-direction: column;
 
                     li{
@@ -243,6 +257,7 @@
                     }
                 }
                 button{
+                    cursor: pointer;
                     padding: 8px 14px;
                     font-size: 14px;
                     font-weight: 600;
@@ -259,7 +274,7 @@
     }
 }
 .navbar ul li a:hover{
-    color: #4472C4 !important;
+    color: #004878 !important;
     text-decoration: underline;
 }
 
@@ -272,6 +287,11 @@
                 }
             }
         }
+        .thirdsec{
+            .nposcount{
+                display: none !important;
+            }
+        }
         .fourthsec{
             .mobilelogo{
                 display: block !important;
@@ -280,10 +300,24 @@
                 display: none !important;
             }
             .mobile{
+                width: 100%;
                 display: flex !important;
+                align-items: center;
+                justify-content: space-between;
             }
             .hamburger{
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .mobilemenu{
                 display: block !important;
+                overflow: hidden;
+                ul{
+                    display: flex !important;
+                }
             }
             
         }

@@ -26,87 +26,118 @@ const Counter = () => {
 
             <div className="boxes">
                 <div className="box">
-                  <div className="img">
-                    <img src={count1} alt="" />
+                  <div className="upper">
+
+                    <div className="img">
+                      <img src={count1} alt="" />
+                    </div>
+                    <h5><AnimatedCounter from={0} to={500}/>+</h5>
+                    <h3>SUPPORT NPOS VETTED FOR ADVANCED LEVELS</h3>
+                    <ul>
+                          <li>
+                              <span className='tickicon'><TickIcon/></span>
+                              <h4>Donate money</h4>
+                          </li>
+                          <li>
+                              <span className='tickicon'><TickIcon/></span>
+                              <h4>Volunteer</h4>
+                          </li>
+                          <li>
+                              <span className='tickicon'><TickIcon/></span>
+                              <h4>Gift in-kind</h4>
+                          </li>
+                          <li>
+                              <span className='tickicon'><TickIcon/></span>
+                              <h4>Purchase products</h4>
+                          </li>
+                          <li>
+                              <span className='tickicon'><TickIcon/></span>
+                              <h4>Celebrate occasions</h4>
+                          </li>
+                      </ul>
                   </div>
-                  <h5><AnimatedCounter from={0} to={500}/>+</h5>
-                   <h3>SUPPORT NPOS VETTED FOR ADVANCED LEVELS</h3>
-                   <ul>
-                        <li>
-                            <span className='tickicon'><TickIcon/></span>
-                            <h4>Donate money</h4>
-                        </li>
-                        <li>
-                            <span className='tickicon'><TickIcon/></span>
-                            <h4>Volunteer</h4>
-                        </li>
-                        <li>
-                            <span className='tickicon'><TickIcon/></span>
-                            <h4>Gift in-kind</h4>
-                        </li>
-                        <li>
-                            <span className='tickicon'><TickIcon/></span>
-                            <h4>Purchase products</h4>
-                        </li>
-                        <li>
-                            <span className='tickicon'><TickIcon/></span>
-                            <h4>Celebrate occasions</h4>
-                        </li>
+                  <button className='red'>Support</button>
+                </div>
+                <div className="box">
+                  <div className="upper">
+
+                    <div className="img">
+                      <img src={count2} alt="" />
+                    </div>                
+                    <h5><AnimatedCounter from={0} to={7000}/>+</h5>
+                    <h3>ENGAGE WITH NPOS VERIFIED FOR BASIC LEVEL</h3>
+                    <ul>
+                      <li>
+                          <span className='tickicon'><TickIcon/></span>
+                          <h4>Volunteer</h4>
+                      </li>
+                      <li>
+                          <span className='tickicon'><TickIcon/></span>
+                          <h4>Gift in-kind</h4>
+                      </li>
+                      <li>
+                          <span className='tickicon'><TickIcon/></span>
+                          <h4>Purchase products</h4>
+                      </li>
+                      <li>
+                          <span className='tickicon'><TickIcon/></span>
+                          <h4>Celebrate occasions</h4>
+                      </li>
                     </ul>
+                  </div>
+                  <button className='blue'>Engage</button>
                 </div>
                 <div className="box">
-                  <div className="img">
-                    <img src={count2} alt="" />
-                  </div>                
-                  <h5><AnimatedCounter from={0} to={7000}/>+</h5>
-                  <h3>ENGAGE WITH NPOS VERIFIED FOR BASIC LEVEL</h3>
-                  <ul>
-                    <li>
-                        <span className='tickicon'><TickIcon/></span>
-                        <h4>Volunteer</h4>
-                    </li>
-                    <li>
-                        <span className='tickicon'><TickIcon/></span>
-                        <h4>Gift in-kind</h4>
-                    </li>
-                    <li>
-                        <span className='tickicon'><TickIcon/></span>
-                        <h4>Purchase products</h4>
-                    </li>
-                    <li>
-                        <span className='tickicon'><TickIcon/></span>
-                        <h4>Celebrate occasions</h4>
-                    </li>
-                  </ul>
+                  <div className="upper">
+                    <div className="img">
+                      <img src={count3} alt="" />
+                    </div>                
+                    <h5><AnimatedCounter from={0} to={12000}/>+</h5>
+                    <h3>DISCOVER NPOS VERIFIED FOR ENTRY LEVEL</h3>
+                    <ul>
+                      <li>
+                          <span className='tickicon'><TickIcon/></span>
+                          <h4>Gift in-kind</h4>
+                      </li>
+                      <li>
+                          <span className='tickicon'><TickIcon/></span>
+                          <h4>Purchase products</h4>
+                      </li>
+                      <li>
+                          <span className='tickicon'><TickIcon/></span>
+                          <h4>Celebrate occasions</h4>
+                      </li>
+                    </ul>
+                  </div>
+                  <button className='red'>Discover</button>
                 </div>
                 <div className="box">
-                  <div className="img">
-                    <img src={count3} alt="" />
-                  </div>                
-                  <h5><AnimatedCounter from={0} to={12000}/>+</h5>
-                  <h3>DISCOVER NPOS VERIFIED FOR ENTRY LEVEL</h3>
-                  <ul>
-                    <li>
-                        <span className='tickicon'><TickIcon/></span>
-                        <h4>Gift in-kind</h4>
-                    </li>
-                    <li>
-                        <span className='tickicon'><TickIcon/></span>
-                        <h4>Purchase products</h4>
-                    </li>
-                    <li>
-                        <span className='tickicon'><TickIcon/></span>
-                        <h4>Celebrate occasions</h4>
-                    </li>
-                  </ul>
-                </div>
-                <div className="box">
-                  <div className="img">
-                    <img src={count4} alt="" />
-                  </div>                
-                  <h5><AnimatedCounter from={0} to={200000}/>+</h5>
-                  <h3>EXPLORE NPOS FOR YOUR RESEARCH AND OUTREACH</h3>
-                  
+                  <div className="upper">
+                    <div className="img">
+                      <img src={count4} alt="" />
+                    </div>                
+                    <h5><AnimatedCounter from={0} to={200000}/>+</h5>
+                    <h3>EXPLORE NPOS FOR YOUR RESEARCH AND OUTREACH</h3>
+                    <ul>
+                      <li>
+                          <span className='tickicon'><TickIcon/></span>
+                          <h4>NPO Outreach</h4>
+                      </li>
+                      <li>
+                          <span className='tickicon'><TickIcon/></span>
+                          <h4>NPO Research</h4>
+                      </li>
+                      <li>
+                          <span className='tickicon'><TickIcon/></span>
+                          <h4>NPO Outreach</h4>
+                      </li>
+                      <li>
+                          <span className='tickicon'><TickIcon/></span>
+                          <h4>NPO Research</h4>
+                      </li>
+                    </ul>
+                  </div>
+                  <button className='blue'>Explore</button>
                 </div>
             </div>
         </div>

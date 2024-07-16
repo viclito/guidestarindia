@@ -1,7 +1,7 @@
 import './homepage.scss'
 
 import search from '../../src/assets/search.png'
-import mainimg from '../../src/assets/homepage/Frame_2-removebg-preview.png'
+import mainimg from '../../src/assets/homepage/Frame 61.png'
 
 const Landingpage = () => {
   return (

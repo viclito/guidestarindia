@@ -54,13 +54,14 @@
                     max-width: 750px;
                     position: relative;
                     display: flex;
-                    gap: 8px;
+                    
                     align-items: center;
                     flex-wrap: wrap;
                     .input{
                         flex-grow: 1;
-                        border: 2px solid #C00000;
+                        border: 2px solid #004878;
                         border-radius: 5px;
+                        border-bottom-right-radius: 0px;
                         display: flex;
                         height: 40px;
                         width: 310px;
@@ -97,10 +98,13 @@
                         border-radius: 5px;
                     }
                     .search{
-                        background-color: #4472C4;
+                        background-color: #004878;
+                        margin-right: 8px;
+                        border-bottom-left-radius: 0px;
                     }
                     .register{
                         background-color: #C00000;
+                        
                     }
                     .underline{
                         position: absolute;
@@ -128,88 +132,30 @@
     }
 }
 
-
-// medals
-
-
-.homepage{
-    .medal{
-        background-color: #f7f7f7;
-        .inner{
-            max-width: 1250px;
-            padding: 70px 20px;
-            margin: auto;
-            .boxes{
-                display: grid;
-                grid-template-columns: repeat(4 , 1fr);
+@media (max-width:990px) {
+    .homepage{
+        .landing{
+            .inner{
+                grid-template-columns: 1fr;
                 place-items: center;
-
-                .box{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    padding: 16px;
-                    .img{
-                        display: flex;
-                        justify-content: center;
-                    }
-                    img{
-                        height: 160px;
-                        width: auto;
-                        
-                    }
-                    h3{
-                        text-align: center;
-                    }
-                    h4{
-                        text-align: justify;
-                    }
+                .left{
+                    margin-bottom: 40px;
                 }
             }
         }
     }
 }
-
-
-
-
-.homepage{
-    .counter{
-        .inner{
-            max-width: 1250px;
-            margin: auto;
-            padding: 70px 20px;
-            .boxes{
-                display: grid;
-                grid-template-columns: repeat(4 , 1fr);
-                .box{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 14px;
-                    padding: 16px;
-                    .img{
-                        display: flex;
-                        justify-content: center;
-                        img{
-                            height: 80px;
-                            width: auto;
-                        }
-                    }
-                    h5{
-                        text-align: center;
+@media (max-width:490px) {
+    .homepage{
+        .landing{
+            .inner{
+                .left{
+                    margin-bottom: 40px;
+                    h1{
                         font-size: 30px;
                     }
-                    ul{
-                    
-                        li{
-                            padding: 5px 0;
-                            display: flex;
-                            gap: 10px;
-                            align-items: start;
-                            .tickicon{
-                                padding-top: 4px;
-                            }
-                        }
+                    h2{
+                        width: 100%;
                     }
                 }
             }
@@ -218,9 +164,7 @@
 }
 
 
-
-
-
+// discover Npos
 .homepage{
     .discover{
         background-color: #f7f7f7;
@@ -279,6 +223,141 @@
 }
 
 
+// medals
+
+
+.homepage{
+    .medal{
+        
+        .inner{
+            max-width: 1250px;
+            padding: 70px 20px;
+            margin: auto;
+
+            h1{
+                padding-bottom: 20px;
+            }
+            h2{
+                line-height: 1.5;
+                text-align: center;
+                max-width: 850px;
+                margin: auto;
+                font-size: 15px;
+                margin-bottom: 50px;
+            }
+            .boxes{
+                display: grid;
+                grid-template-columns: repeat(4 , 1fr);
+                place-items: center;
+                
+
+                .box{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding: 16px;
+                    .img{
+                        display: flex;
+                        justify-content: center;
+                    }
+                    img{
+                        height: 160px;
+                        width: auto;
+                        
+                    }
+                    h3{
+                        text-align: center;
+                        transform: scaleY(1.2);
+                        font-weight: 600;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+//counter
+
+.homepage{
+    .counter{
+        background-color: #f7f7f7;
+        .inner{
+            max-width: 1250px;
+            margin: auto;
+            padding: 70px 20px;
+            .boxes{
+                display: grid;
+                grid-template-columns: repeat(4 , 1fr);
+                .box{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 16px;
+                    justify-content: space-between;
+                    box-shadow: 1px 1px 1px #ccc , -1px -1px 1px #ccc;
+                    .upper{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 14px;
+                        
+                    }
+                    .img{
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            height: 80px;
+                            width: auto;
+                        }
+                    }
+                    h5{
+                        text-align: center;
+                        font-size: 30px;
+                    }
+                    ul{
+                    
+                        li{
+                            padding: 5px 0;
+                            display: flex;
+                            gap: 10px;
+                            align-items: start;
+                            .tickicon{
+                                padding-top: 4px;
+                            }
+                        }
+                    }
+                    button{
+                        cursor: pointer;
+                        align-self: center;
+                        border: none;
+                        outline: none;
+                        padding: 6px 10px;
+                        color: white;
+                        font-size: 13px;
+                        font-weight: 600;
+                        border-radius: 5px;
+                        margin-top: 10px;
+                    }
+                    .red{
+                        background-color: #C00000;
+                    }
+                    .blue{
+                        background-color: #004878;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
 
 
 .homepage{
@@ -300,7 +379,7 @@
                     justify-content: space-between;
                     transition: all .4s;
                     &:hover{
-                        background-color: #4472C4;
+                        background-color: #004878;
                         color: #f7f7f7;
                     }
                     .upper{
@@ -349,9 +428,38 @@
 }
 
 
+@media (max-width:990px) {
+    .homepage{
+        .medal , .counter , .discover , .philanthropy{
+            .inner{
+                .boxes{
+                    grid-template-columns: repeat(2 , 1fr);
+                }
+            }
+        }
+    }
+}
+@media (max-width:570px) {
+    .homepage{
+        .medal , .counter , .discover ,.philanthropy {
+            .inner{
+                .boxes{
+                    grid-template-columns: repeat(1 , 1fr) !important;
+                    .box{
+                        max-width: 400px;
+                        margin: auto;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
+
+// certified npos
 
 
 .homepage{
@@ -362,6 +470,7 @@
             max-width: 1250px;
             margin: auto;
             padding: 70px 20px;
+            overflow: hidden;
             // display: flex;
             // flex-direction: column;
             // align-items: center;
@@ -370,7 +479,9 @@
                 display: grid;
                 grid-template-columns: repeat(6 , 1fr);
                 grid-gap:20px;
+                place-items: center;
                 .box{
+                    width: 100%;
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
@@ -380,22 +491,46 @@
                         align-items: center;
                         justify-content: center;
                         height: 100px;
+                        width: 100%;
+                        
                         img{
-                            max-height: 100%;
-                            width: auto;
+                            max-width: 100%;
+                            max-height: 90%;
                         }
                     }
-                    .secondimg{
-                        height: 40px;
-                        width: auto;
-                        object-fit: contain;
-                    }
+                    
                     h5{
                         text-align: center;
+                        transform: scaleY(1.2);
                     }
                 }
                 
             }
+        }
+    }
+}
+
+@media (max-width:990px) {
+    .homepage{
+        .certifiednpos{
+            .inner{
+                .boxes{
+                    grid-template-columns: repeat(3 , 1fr);
+                }
+            }
+            
+        }
+    }
+}
+@media (max-width:560px) {
+    .homepage{
+        .certifiednpos{
+            .inner{
+                .boxes{
+                    grid-template-columns: repeat(2 , 1fr);
+                }
+            }
+            
         }
     }
 }
@@ -431,6 +566,33 @@
                     h3{
                         text-align: justify;
                         line-height: 1.8;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:990px) {
+    .homepage{
+        .nposector{
+            .inner{
+                .boxes{
+                    grid-template-columns: repeat(2 , 1fr);
+                }
+            }
+        }
+    }
+}
+@media (max-width:560px) {
+    .homepage{
+        .nposector{
+            .inner{
+                .boxes{
+                    grid-template-columns: repeat(1 , 1fr);
+                    .box{
+                        max-width: 400px;
+                        margin: auto;
+                        margin-bottom: 10px;
                     }
                 }
             }
@@ -592,6 +754,35 @@
 }
 
 
+@media (max-width:990px) {
+    .homepage{
+        .stories , .changemakers , .testimonial{
+            .inner{
+                .boxes{
+                    grid-template-columns: repeat(2 , 1fr) !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width:790px) {
+    .homepage{
+        .stories , .changemakers , .testimonial{
+            .inner{
+                .boxes{
+                    grid-template-columns: repeat(1 , 1fr) !important;
+                    .box{
+                        max-width: 400px;
+                        margin: auto;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 .homepage{
     .testimonial{
         background-color: #f7f7f7;
@@ -620,12 +811,14 @@
                     display: flex;
                     flex-direction: column;
                     gap: 35px;
+                   
                     .textbox{
                         box-shadow: 0 0 20px rgba(0, 0, 0, .08);
                         padding: 30px;
                         background-color: white;
                         position: relative;
                         transition: .5s;
+                        min-height: 380px;
 
                         &::before{
                             content: "▼";
@@ -633,7 +826,7 @@
                             font-size: 30px;
                             color: white !important;
                             left: 14%;
-                            bottom: -16%;
+                            bottom: -7%;
                             color: black;
                         }
                         &:hover{
@@ -646,21 +839,22 @@
 
                     .downbox{
                         display: flex;
-                        justify-content: space-between;
+                        align-items: center;
                         gap: 20px;
                         width: 100%;
                         .img{
-                            height: 80px;
-                            width: 120px;
-                            border-radius: 50%;
+                            height: 100px;
+                            width: 100px;
                             overflow: hidden;
+                            align-content: center;
                             img{
-                                width: 100%;
-                                height: 100%;
+                                max-width: 100%;
+                                max-height: 100%;
                                 object-fit: cover;
                             }
                         }
                         .innertext{
+                            flex: 1;
                             h3{
                                 margin-bottom: 10px;
                             }
@@ -701,7 +895,7 @@
             .boxes{
                 width: 100%;
                 display: grid;
-                grid-template-columns: repeat(6 , 1fr);
+                grid-template-columns: repeat(4 , 1fr);
                 grid-gap:50px;
                 .box{
                     display: flex;
@@ -717,13 +911,38 @@
                         img{
                             background-size: auto;
                             max-width: 100%;
-                            height: auto;
+                            max-height: 100%;
                         }
                     }
                     
                 }
                 
             }
+        }
+    }
+}
+
+@media (max-width:990px) {
+    .homepage{
+        .partners{
+            .inner{
+                .boxes{
+                    grid-template-columns: repeat(3 , 1fr);
+                }
+            }
+            
+        }
+    }
+}
+@media (max-width:560px) {
+    .homepage{
+        .partners{
+            .inner{
+                .boxes{
+                    grid-template-columns: repeat(2 , 1fr);
+                }
+            }
+            
         }
     }
 }

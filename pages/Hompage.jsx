@@ -1,6 +1,7 @@
 
 import Layout from '../components/Layout'
 import Counter from '../subpages/homepage/Counter'
+import DiscoverNpos from '../subpages/homepage/DiscoverNpos'
 import HomepageEighttoElevenSec from '../subpages/homepage/HomepageEighttoElevenSec'
 import HomepageThreetoSixSec from '../subpages/homepage/HomepageThreetoSixSec'
 import Landingpage from '../subpages/homepage/Landingpage'
@@ -12,6 +13,7 @@ const Hompage = () => {
     <Layout>
       <div className="homepage">
         <Landingpage/>
+        <DiscoverNpos/>
         <Medals/>
         <Counter/>
         <HomepageThreetoSixSec/>

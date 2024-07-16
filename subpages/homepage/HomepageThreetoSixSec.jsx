@@ -1,12 +1,9 @@
-import React from 'react'
+
 import './homepage.scss'
 import HoverableBox from '../../components/HoverableBox'
 
 
-import badge from "../../src/assets/homepage/badge.png"
-import location from "../../src/assets/homepage/location.png"
-import socialJustice from "../../src/assets/homepage/social-justice.png"
-import rupee from "../../src/assets/homepage/rupee (1).png"
+
 
 import search1 from '../../src/assets/homepage/search1.png';
 import searchhov from '../../src/assets/homepage/seacrchhov.png';
@@ -17,15 +14,12 @@ import signalhov from '../../src/assets/homepage/signalhov.png';
 import file1 from '../../src/assets/homepage/file1.png';
 import filehov from '../../src/assets/homepage/filehov.png';
 
-import picture1 from '../../src/assets/homepage/Picture1.png';
-import picture2 from '../../src/assets/homepage/Picture2.png';
-import picture3 from '../../src/assets/homepage/Picture3.png';
-import picture4 from '../../src/assets/homepage/Picture4.png';
-import picture5 from '../../src/assets/homepage/Picture5.png';
-import platinum from '../../src/assets/homepage/platinum.png';
-import gold from '../../src/assets/homepage/gold.png';
-import silver from '../../src/assets/homepage/silver.png';
-import bronze from '../../src/assets/homepage/bronze.png';
+import picture1 from '../../src/assets/homepage/Thane_CPCA.png';
+import picture2 from '../../src/assets/homepage/Reaching_Hand.png';
+import picture3 from '../../src/assets/homepage/KHUSHII.png';
+import picture4 from '../../src/assets/homepage/Setco.png';
+import picture5 from '../../src/assets/homepage/noskk.png';
+import picture6 from '../../src/assets/homepage/Agragamee.png';
 
 
 
@@ -36,57 +30,7 @@ import npo3 from '../../src/assets/homepage/npo3.png';
 const HomepageThreetoSixSec = () => {
   return (
     <>
-        <div className="discover">
-            <div className="inner">
-                <h1>Discover NPOs across India</h1>
-                <div className="boxes">
-                    <div className="box">
-                        <a href="">
-                            <div className="imgbox">
-                                <div className="img">
-                                    <img src={badge} alt="" />
-                                </div>
-                            </div>
-                            <h3>SEARCH BY CERTIFICATION LEVEL</h3>
-                            <h4>Identify NPOs with stellar credibility and transparency</h4>
-                        </a>
-                    </div>
-                    <div className="box">
-                        <a href="">
-                            <div className="imgbox">
-                                <div className="img">
-                                    <img src={location} alt="" />
-                                </div>
-                            </div>
-                            <h3>SEARCH BY GEOGRAPHY</h3>
-                            <h4>Locate NPOs active in every state and district across India</h4>
-                        </a>
-                    </div>
-                    <div className="box">
-                        <a href="">
-                            <div className="imgbox">
-                                <div className="img">
-                                    <img src={socialJustice} alt="" />
-                                </div>
-                            </div>
-                            <h3>SEARCH BY CAUSE</h3>
-                            <h4>Find NPOs for every cause and community you care about</h4>
-                        </a>
-                    </div>
-                    <div className="box">
-                        <a href="">
-                            <div className="imgbox">
-                                <div className="img">
-                                    <img src={rupee} alt="" />
-                                </div>
-                            </div>
-                            <h3>SEARCH BY FINANCIALS</h3>
-                            <h4>Explore NPOs based on their size, tax benefits, and FCRA eligibility</h4>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
 
         <div className="philanthropy">
@@ -145,43 +89,43 @@ const HomepageThreetoSixSec = () => {
                         <div className="img">
                         <img src={picture1} alt="" />
                         </div>
-                        <img className='secondimg' src={platinum} alt="" />
-                        <h5>Platinum</h5>
+                        
+                        <h5 style={{color: "#a3bcc7"}}>PLATINUM</h5>
                     </a>
                     <a href='' className="box">
                         <div className="img">
                         <img src={picture2} alt="" />
                         </div>
-                        <img className='secondimg' src={gold} alt="" />
-                        <h5 style={{ color: "#fec74e" }}>Gold</h5>
+                        
+                        <h5 style={{color: "#a3bcc7"}}>PLATINUM</h5>
                     </a>
                     <a href='' className="box">
                         <div className="img">
                         <img src={picture3} alt="" />
                         </div>
-                        <img className='secondimg' src={gold} alt="" />
-                        <h5 style={{ color: "#fec74e" }}>Gold</h5>
+                        
+                        <h5 style={{color: "#a3bcc7"}}>PLATINUM</h5>
                     </a>
                     <a href='' className="box">
                         <div className="img">
                         <img src={picture4} alt="" />
                         </div>
-                        <img className='secondimg' src={platinum} alt="" />
-                        <h5>Platinum</h5>
+                        
+                        <h5 style={{ color: "#ffcc28" }}>GOLD</h5>
                     </a>
                     <a href='' className="box">
                         <div className="img">
                         <img src={picture5} alt="" />
                         </div>
-                        <img className='secondimg' src={gold} alt="" />
-                        <h5 style={{ color: "#fec74e" }}>Gold</h5>
+                        
+                        <h5 style={{ color: "#a05822" }}>BRONZE</h5>
                     </a>
                     <a href='' className="box">
                         <div className="img">
-                        <img src={picture1} alt="" />
+                        <img src={picture6} alt="" />
                         </div>
-                        <img className='secondimg' src={gold} alt="" />
-                        <h5 style={{ color: "#fec74e" }}>Gold</h5>
+                        
+                        <h5 style={{ color: "#a05822" }}>BRONZE</h5>
                     </a>
                 </div>
             </div>
@@ -209,7 +153,7 @@ const HomepageThreetoSixSec = () => {
                         <div className="img">
                         <img src={npo3} alt="" />
                         </div>
-                        <h3>The average number of full-time staff is 48.78 (n=4531)</h3>
+                        <h3>The average number of full-time staff is 49 (n=4531)</h3>
                     </div>
                 </div>
             </div>

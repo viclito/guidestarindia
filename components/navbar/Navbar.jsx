@@ -27,6 +27,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [navOpen , setNavOpen] = useState(false)
+  const [hamburgertoggle , setHamburgertoggle] = useState(false)
   return (
     <div className='navbar'>
         <div className="inner">
@@ -50,7 +51,7 @@ const Navbar = () => {
                     <img src={search} alt="" />
                   </button>
                 </div>
-                <h5>NPO/NGO/ Charity Check</h5>
+                <h5>NPO/ NGO/ Charity Check</h5>
               </div>
             </div>
             
@@ -157,7 +158,7 @@ const Navbar = () => {
               <div className="mobilelogo">
                 <img src={logo} alt="" />
               </div>
-              <div className="hamburger">
+              <div className="hamburger" onClick={()=>setHamburgertoggle(!hamburgertoggle)}>
                 <img src={hamburger} alt="" />
               </div>
             </div>
@@ -175,19 +176,26 @@ const Navbar = () => {
                 </Link>
               </button>
             </ul>
-            <div className='mobilemenu'>
+            <motion.div 
+              className='mobilemenu'
+              initial={{ opacity: 0, height: 0 }}
+              animate={hamburgertoggle ? { opacity: 1, height: 'auto' } : { opacity: 0, height: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               <ul>
-                <li><a href="">Home</a></li>
+                <li><Link to='/'>Home</Link></li>
                 <li><a href="">Discover/ Support NPOs</a></li>
                 <li><a href="">CERTIFIED NPOs LIST</a></li>
                 <li><a href="">Update your Npo Profile</a></li>
                 <li><a href="">help</a></li>
                 <li><a href="">Media</a></li>
-                <button>
-                  Sign In / Create Account
-                </button>
+                <Link to="/login">
+                  <button>
+                    Sign In / Create Account
+                  </button>
+                </Link>
               </ul>
-            </div>
+            </motion.div>
             
           </div>
         </div>

@@ -6,12 +6,17 @@ const base_url = 'http://guidestarindia.momsuat.com/';
 
 const fetchStates = async () => {
     const token = localStorage.getItem('token');
+    console.log(token);
+
     const { data } = await axios.get(`${base_url}api/method/guidestar.api.npo_registration.get_states`, {
         headers: {
-            'Authorization': `Bearer ${token}`,
+            'Authorization': token,
+            // 'Content-Type': 'application/json'
+
         },
     });
-    return data.states;
+    return data.documents;
+    
 };
 
 const StatesList = () => {
@@ -19,6 +24,7 @@ const StatesList = () => {
 
     if (isLoading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
+    
 
     return (
         <div>
@@ -33,3 +39,7 @@ const StatesList = () => {
 };
 
 export default StatesList;
+
+
+
+
